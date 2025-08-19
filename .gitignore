@@ -1,0 +1,12 @@
+# Proyecto Laboratorio 6 Node.js
+
+# Directorio de dependencias
+node_modules/
+# Archivo de variables de entorno
+.env
+# Archivo de log de npm
+npm-debug.log
+#Directorio de cobertura de pruebas
+coverage/
+# Archivo del sistema operativo macOS
+.DS_Store
