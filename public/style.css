@@ -1,0 +1,97 @@
+:root{
+  --bg:#f7f9fc;        /* fondo */
+  --accent:#1e88e5;    /* acento */
+  --muted:#e3f2fd;     /* suave */
+  --text:#1f2937;      /* texto */
+  --card:#ffffff;      /* tarjetas */
+  --radius:14px;
+  --shadow:0 6px 18px rgba(0,0,0,.06);
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color:var(--text);
+  background:linear-gradient(180deg, var(--bg), #fff 60%);
+}
+
+.container{
+  width:min(980px, 92%);
+  margin-inline:auto;
+}
+
+.header{
+  padding:28px 0 8px;
+}
+.header h1{
+  margin:0;
+  font-weight:700;
+  letter-spacing:.3px;
+  color:var(--accent);
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--muted);
+  border-radius:var(--radius);
+  padding:22px 20px;
+  margin:14px 0;
+  box-shadow:var(--shadow);
+}
+
+h2{
+  margin-top:0;
+  font-size:1.1rem;
+  border-left:6px solid var(--accent);
+  padding-left:10px;
+}
+
+.facts{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:8px;
+}
+.facts a{
+  color:var(--accent);
+  text-decoration:none;
+}
+.facts a:hover{
+  text-decoration:underline;
+}
+
+.table-wrap{
+  overflow:auto;
+  border-radius:10px;
+  border:1px solid var(--muted);
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+}
+thead th{
+  background:var(--muted);
+  text-align:left;
+  padding:10px 12px;
+  font-weight:600;
+}
+tbody td{
+  padding:10px 12px;
+  border-top:1px solid #eef2f7;
+}
+tbody tr:hover{
+  background:#fafcff;
+}
+
+.footer{
+  padding:22px 0 40px;
+  text-align:center;
+  color:#6b7280;
+}
