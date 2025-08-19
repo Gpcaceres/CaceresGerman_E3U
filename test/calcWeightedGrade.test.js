@@ -1,4 +1,4 @@
-const { calcWeightedGrade, percentile } = require('../src/utils');
+const { calcWeightedGrade, percentile } = require('../src/utils/calcWeightedGrade');
 
 describe('calcWeightedGrade', () => {
 test('caso de referencia: 80@0.4 + 90@0.6 = 86.00', () => {
